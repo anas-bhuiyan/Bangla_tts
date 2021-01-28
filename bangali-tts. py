@@ -1,0 +1,7 @@
+from gtts import gTTS
+import playsound
+import os
+tts = gTTS(text='ভাষার পূর্ণতার মাঝে, নতুন সূচনা সৃষ্টি। দৃষ্টি সুদূরে, যেন খাদ্যে নয়! আশায় বাঁচে প্রাণ। তথ্য ও যোগাযোগ প্রযুক্তির জগতে,বাংলার হবে দূর্দান্ত এক আগমন, এই মোদের লক্ষ্য।', lang='bn')
+tts.save("good.mp3")
+os.system("mpg321 good.mp3")
+playsound.playsound('good.mp3', True)
